@@ -3,6 +3,7 @@
 let palavra = "xxx"
 
 
+
 let qtdanagramas =0
 
 
@@ -22,14 +23,14 @@ function anagramas(palavra, indexLetraAtual) {
   while (temRepetida) {
       let proximoIndex = indexLetraRepetida(indexLetraAtual, palavra, qtdIgnorar);
       if (proximoIndex !== -1) {
-        if (indexLetraAtual + 1 === proximoIndex) {
+        if (indexLetraAtual + 1 === proximoIndex) {  //ovo
           qtdanagramas++;
           qtdIgnorar++;
         } else {
           qtdanagramas++;
-          let subString = palavra.substring(indexLetraAtual);
-          let qtdElementosEntreIndices = subString.length - 2;
-  
+          let subString = palavra.substring(indexLetraAtual, proximoIndex+1);
+          let qtdElementosEntreIndices = subString.length - 2;                  
+                                                                              
           if (qtdElementosEntreIndices % 2 !== 0) {
             // let letraMeio = subString[(subString.length-1)/2]
             let primeiraMetade = subString.substring(
@@ -58,9 +59,7 @@ function anagramas(palavra, indexLetraAtual) {
   
           if (qtdElementosEntreIndices % 2 === 0) {
             let primeiraMetade2 = subString.substring(0, subString.length / 2);
-            let segundaMetade2 = subString.substring(
-              ((subString.length / 2) -1),
-              subString.length
+            let segundaMetade2 = subString.substring(((subString.length / 2) -1), subString.length
             );
             let qtdIncludes2 = 0;
   
@@ -106,13 +105,14 @@ function indexLetraRepetida(indexLetraAtual, palavra, qtdIgnorar) {
         if (qtdIgnorar > 0) {
           qtdIgnorar--;
         } else {
-          return i;
+          return i+indexLetraAtual;
         }
       }
     }
   
     return -1;
   };
+
 
 // asdhgfwxgfwhkk
 // hgfwgfwh
