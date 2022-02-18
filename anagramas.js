@@ -127,31 +127,3 @@ function indexLetraRepetida(indexLetraAtual, palavra, qtdIgnorar) {
 // ifafiluhkqq
 // ovo
 //
-// if palavra[indexLetraAtual] === palavra[indexLetraRepetida] == proximoIndex -> qtdanagramas++
-//
-// if()
-//
-// let subString = array.subString(letraInicial, indexLetraRepetida)
-//
-// qtdElementosEntreIndices = subString.length -2
-//
-// se qtdElementosEntreIndices for ímpar -> verificar de subString[0] até (inculsive)subString[((subString.length-1)/2 )]
-// e verificar de (inclusive)subString[((subString.length-1)/2 )] até subString[(subString.length-1)]
-//
-// se qtdElementosEntreIndices for par -> verificar se qtdElementosEntreIndices ===2
-//
-//
-// se qtdElementosEntreIndices ===2 ->
-// verificar se é anagrama de subString[0] até subString[2] ->
-// e verificar de subString[1] até subString[3]
-//
-// se qtdElementosEntreIndices > 2 ->
-// verificar se é anagrama de subString[0] até subString[(qtdElementosEntreIndices/2)] ->
-// e verificar de subString[subString[(qtdElementosEntreIndices/2)+1] até subString[(subString.length-1)]
-//
-//
-//
-//
-//
-// let qtdanagramas;
-// if indexLetraRepetida = proximoIndex -> qtdanagramas++
